@@ -1,23 +1,21 @@
-## Teamwork Contract for project
+## Teamwork Contract for ADSC3910 project
+
 ## Expectations
 
-The time expected for group members to work on ADSC3910 will be a maximum of 20 hours per week (including meetings) unless all the team members agree to lengthen the time expected.
-Each group member's assigned tasks should be completed at least 6 hours prior to the deliverable submission deadline. This will allow ample time for pull requests to be reviewed before submission.
-If team members cannot complete their tasks within the maximum weekly hours, members should give notice on Email or Whatsapp at least 12 hours before the deadline to see if work should be redistributed or if the expected time should be increased.
-All submissions are expected to meet the criteria of the deliverables as set out in the instructions.
+Group members working on ADSC3910 are expected to commit up to 20 hours per week, including meetings. If additional time is necessary, it must be agreed upon by the entire team. Each member should complete their assigned tasks at least 6 hours before the deliverable deadline to allow sufficient time for pull request reviews. If a member cannot meet their task requirements within the allotted hours, they must notify the team via email or WhatsApp at least 12 hours before the deadline to determine whether tasks should be redistributed or if additional time should be allocated. All submissions must adhere to the deliverable criteria outlined in the instructions.
 
-## Mode of communication
+## Mode of Communication
 
-Team members will have in-person meetings at the TRU OM campus on Tuesday, Wednesday and Friday. The time set to meet in person would be in between class breaks and will continue for a minimum of 3 hours. In-person meetings will be allocated to know the progress, review and make changes of the project contributed by the team members. 
+Team members will meet in person at the TRU Old main on Tuesday, Wednesday, and Friday. Meetings will occur during class breaks and last for a minimum of 3 hours. These meetings will focus on progress updates, reviewing, and making necessary changes to the project contributions.
 
-## Task management system
+## Task Management System
 
-In person meetings, github and whatsapp communication will be the primary communication tool for ideas, suggestions, submitting work, and reviewing work. There will be a project board set up in GitHub to track the tasks assigned to each person related to the deliverables. The tasks will be closed after the completion of the corresponding deliverable.
+In-person meetings, GitHub, and WhatsApp will be the primary tools for communication, idea exchange, task submission, and review. A project board will be established in GitHub to track each member's assigned tasks related to the deliverables. Tasks will be marked as complete once the corresponding deliverable is finalized.
 
 ## Reviews
 
-Group members are expected to branch out from the main and submit a pull request to merge their work to the GitHub repository for the group project. Members are expected to add teammates as reviewers to have all pull requests reviewed by another teammate. Pull requests should be reviewed within 24 hours after creation.
+Group members are expected to work on their own branches and submit pull requests to merge their contributions into the main GitHub repository for the project. Members must add teammates as reviewers, ensuring that all pull requests are reviewed by at least one other teammate within 24 hours of submission.
 
-## Breach of Contract
+**Breach of Contract**
 
-Failure to follow the team contract the team should first attempt to resolve the issue through direct discussion with the breaching member. If the breach remains unresolved, the members should reach out to the professor about the issues with the teammate.
+If a team member fails to adhere to the team contract, the issue should first be addressed through direct discussion within the team. If the breach remains unresolved, the team should escalate the matter to the professor.
