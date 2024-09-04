@@ -1,4 +1,4 @@
-## Teamwork Contract for Capstone project
+## Teamwork Contract for project
 ## Expectations
 
 The time expected for group members to work on ADSC3910 will be a maximum of 20 hours per week (including meetings) unless all the team members agree to lengthen the time expected.
