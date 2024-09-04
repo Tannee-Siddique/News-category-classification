@@ -8,3 +8,15 @@ All submissions are expected to meet the criteria of the deliverables as set out
 **Mode of communication**
 
 Team members will have in-person meetings at the TRU OM campus on Tuesday, Wednesday and Friday. The time set to meet in person would be in between class breaks and will continue for a minimum of 3 hours. In-person meetings will be allocated to know the progress, review and make changes of the project contributed by the team members. 
+
+**Task management system**
+
+In person meetings, github and whatsapp communication will be the primary communication tool for ideas, suggestions, submitting work, and reviewing work. There will be a project board set up in GitHub to track the tasks assigned to each person related to the deliverables. The tasks will be closed after the completion of the corresponding deliverable.
+
+**Reviews**
+
+Group members are expected to branch out from the main and submit a pull request to merge their work to the GitHub repository for the group project. Members are expected to add teammates as reviewers to have all pull requests reviewed by another teammate. Pull requests should be reviewed within 24 hours after creation.
+
+**Breach of Contract**
+
+Failure to follow the team contract the team should first attempt to resolve the issue through direct discussion with the breaching member. If the breach remains unresolved, the members should reach out to the professor about the issues with the teammate.
