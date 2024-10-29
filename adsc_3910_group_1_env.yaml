@@ -1,0 +1,20 @@
+# install with conda env create -f adsc_3910_group_1_env.yaml
+
+name: adsc_3910_group_1
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - pip
+  - flake8
+  - black
+  - pyspark
+  - pymongo
+  - pytest
+  - seaborn
