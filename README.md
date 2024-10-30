@@ -33,7 +33,7 @@ Ensure you have the following tools installed
 
 ## Usage
 
-- [README.md]
+- [README.md](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/README.md)
 
 ### Local Setup
 
