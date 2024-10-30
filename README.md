@@ -30,6 +30,14 @@ Ensure you have the following tools installed
 - [VS Code](https://code.visualstudio.com/)
 - [Databricks](https://www.databricks.com/)
 
+## Credentials
+
+- {
+    "host": "clusterx.xxxxx.mongodb.net",
+    "port": "xxxxx",
+    "username": "xxxxxxxx",
+    "password": "xxxxxxxxxxxx"
+  }
 
 ## Usage
 
@@ -62,6 +70,7 @@ make clean
 5. Run the model using the files in [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main.)
 
 - `N_ESTIMATORS`: This parameter denotes the number of learning rate (2e-5) with the AdamW optimizer. The model was trained for 3 epochs. Batch size of 16 was used. Model uses a cross-entropy loss which technically is the default loss function for classification. A 5 fold cross-validation is used to access the model's performance across multiple data splits. Each part being used as a validation set once, while the other four parts were used for training.
+
 
 
 ### Dependencies
