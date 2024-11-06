@@ -25,10 +25,11 @@ Classifying the various news categories is the goal of this study. We want to em
 ## Installation
 
 Ensure you have the following tools installed
-
-- [Mongodb](https://account.mongodb.com/)
 - [VS Code](https://code.visualstudio.com/)
+
+## Platform
 - [Databricks](https://www.databricks.com/)
+- [Mongodb](https://account.mongodb.com/)
 
 ## Credentials
 
@@ -62,9 +63,7 @@ conda activate adsc_3910_group_1
 
 3. Reset and clean the existing analysis results from directories by running the below command from the project root directory:
 
-```bash
-make clean
-```
+
 4. Raw data required to run the pipeline is already downloaded and saved to [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/Dataset)
 
 5. Run the model using the files in [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/Scripts)
