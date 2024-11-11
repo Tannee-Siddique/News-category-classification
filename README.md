@@ -35,9 +35,9 @@ Ensure you have the following tools installed
 
 - {
     "host": "clusterx.xxxxx.mongodb.net",
-    "port": "xxxxx",
-    "username": "xxxxxxxx",
-    "password": "xxxxxxxxxxxx"
+    "port": "27017",
+    "username": "Guest1234",
+    "password": "Group_1"
   }
 
 ## Usage
