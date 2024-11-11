@@ -9,10 +9,13 @@ import urllib.parse
 from transformers import RobertaTokenizer
 import seaborn as sns
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 def main():
     # Load credentials from JSON file
-    with open('credentials_mongodb.json') as f:
+    credentials_path = Path().absolute() / 'credentials_mongodb.json'
+
+    with open(credentials_path) as f:
         login = json.load(f)
 
     # Assign credentials to variables
@@ -43,7 +46,7 @@ def main():
     documents = []
 
     # Load the JSON file
-    file_path = r"C:\Users\tejaa\Downloads\archive (2)\News_Category_Dataset_v3.json"
+    file_path = r"datasets\news_category_dataset_v3.json"
     with open(file_path, 'r') as file:
         for line in file:
             # Each line is a separate JSON object/document
