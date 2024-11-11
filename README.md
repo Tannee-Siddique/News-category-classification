@@ -74,13 +74,11 @@ python scripts/train.py
 4. Raw data required to run the pipeline is already downloaded and saved to [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/Dataset)
 
 
-5. After creating your cluster please go to database and create a new database named news_database and collection name news_collection in it.
+5. Upload raw data to Mongodb using [export_to_mongodb.ipynb](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/Dataset/News_Category_Dataset_v3.json)
 
-6. Upload raw data to Mongodb using [export_to_mongodb.ipynb](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/Dataset/News_Category_Dataset_v3.json)
+6. Now you can run the pipeline [pipeline.ipynb](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/Notebooks/Data_Preprocessing/MongoDB_Pipeline.ipynb)
 
-7. Now you can run the pipeline [pipeline.ipynb](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/Notebooks/Data_Preprocessing/MongoDB_Pipeline.ipynb)
-
-8. Run the models using the files in [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/Scripts)
+7. Run the models using the files in [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/Scripts)
 
 - `N_ESTIMATORS`: This parameter denotes the number of learning rate (2e-5) with the AdamW optimizer. The model was trained for 3 epochs. Batch size of 16 was used. Model uses a cross-entropy loss which technically is the default loss function for classification. A 5 fold cross-validation is used to access the model's performance across multiple data splits. Each part being used as a validation set once, while the other four parts were used for training.
 
