@@ -162,11 +162,11 @@ cython_debug/
 #.idea/
 
 # Ignore credential files
-credentials_mongodb.json
+#credentials_mongodb.json
 
 .DS_Store
 
 # Ignore all JSON files that might contain credentials
-*credentials*.json
+#*credentials*.json
 *secret*.json
 *config*.json
