@@ -13,7 +13,7 @@ from pathlib import Path
 
 def main():
     # Load credentials from JSON file
-    credentials_path = '/Users/khadizatannee/Documents/TRU/Fall-24/IP2/adsc3910-project-group-1/credentials_mongodb.json'
+    credentials_path = Path().absolute() / 'credentials_mongodb.json'
 
     with open(credentials_path) as f:
         login = json.load(f)
