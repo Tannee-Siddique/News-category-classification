@@ -13,7 +13,7 @@ from pathlib import Path
 
 def main():
     # Load credentials from JSON file
-    credentials_path = Path().absolute() / 'credentials_mongodb.json'
+    credentials_path = '/Users/khadizatannee/Documents/TRU/Fall-24/IP2/adsc3910-project-group-1/credentials_mongodb.json'
 
     with open(credentials_path) as f:
         login = json.load(f)
@@ -46,7 +46,7 @@ def main():
     documents = []
 
     # Load the JSON file
-    file_path = r"datasets\news_category_dataset_v3.json"
+    file_path = "../datasets/news_category_dataset_v3.json"
     with open(file_path, 'r') as file:
         for line in file:
             # Each line is a separate JSON object/document
@@ -117,12 +117,6 @@ def main():
     label_encoder = LabelEncoder()
     df['category_encoded'] = label_encoder.fit_transform(df['category'])
 
-    # Data Splitting
-    X = df[['cleaned_headline', 'cleaned_short_description', 'headline_tokens', 'description_tokens']]
-    y = df['category_encoded']
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
-
     ## Calculate and visualize the correlation matrix
     numeric_df = df.select_dtypes(include=['float64', 'int64'])  # Select only numeric columns
     correlation_matrix = numeric_df.corr()
@@ -130,6 +124,7 @@ def main():
     plt.figure(figsize=(10, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", vmin=-1, vmax=1)
     plt.title('Correlation Matrix')
+    plt.savefig("../results/correlation_matrix.png")
     plt.show()
 
     # Add text length features
@@ -142,6 +137,7 @@ def main():
     plt.title('Distribution of Headline Lengths')
     plt.xlabel('Length of Headline')
     plt.ylabel('Frequency')
+    plt.savefig("../results/headline_length_distribution.png")
     plt.show()
 
     # Visualize the distribution of short description lengths
@@ -150,7 +146,15 @@ def main():
     plt.title('Distribution of Short Description Lengths')
     plt.xlabel('Length of Short Description')
     plt.ylabel('Frequency')
+    plt.savefig("../results/short_description_lengths_distribution.png")
     plt.show()
-
+    
+    df.to_csv("../results/preprocessed_data.csv", index=False)
+    print("Preprocessed data saved to preprocessed_data.csv")
+    
 if __name__ == "__main__":
     main()
+    
+
+
+
