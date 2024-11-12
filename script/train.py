@@ -10,22 +10,33 @@ from tqdm import tqdm
 from sklearn.model_selection import KFold
 from sklearn.metrics import accuracy_score, f1_score
 
+import pandas as pd
+
+# Load the preprocessed data
+data = pd.read_csv("../results/preprocessed_data.csv")
+
+# Access necessary columns for training
+X = data[['cleaned_headline', 'cleaned_short_description', 'headline_tokens', 'description_tokens']]
+y = data['category_encoded']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
 
-def tokenize_data(text_data, max_length=128):
+def tokenize_data(text_series, max_length=128):
+    # Ensure input is a list of strings
     return tokenizer(
-        text_data.tolist(),                
-        padding='max_length',              
-        truncation=True,                   
-        max_length=max_length,             
-        return_tensors='pt'                
+        text_series.tolist(),  # Convert Series to a list of strings
+        padding='max_length',
+        truncation=True,
+        max_length=max_length,
+        return_tensors='pt'
     )
 
+
 # Tokenize the training and testing data
-X_train_tokens = tokenize_data(X_train)
-X_test_tokens = tokenize_data(X_test)
+X_train_tokens = tokenize_data(X_train['cleaned_headline'])
+X_test_tokens = tokenize_data(X_test['cleaned_headline'])
+
 
 
 
