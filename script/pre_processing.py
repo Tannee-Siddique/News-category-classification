@@ -11,6 +11,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from pathlib import Path
 
+
 def main():
     # Load credentials from JSON file
     credentials_path = Path().absolute() / 'credentials_mongodb.json'
@@ -46,7 +47,7 @@ def main():
     documents = []
 
     # Load the JSON file
-    file_path = "../datasets/news_category_dataset_v3.json"
+    file_path = Path(__file__).parent.parent / "datasets" / "news_category_dataset_v3.json"
     with open(file_path, 'r') as file:
         for line in file:
             # Each line is a separate JSON object/document
@@ -124,7 +125,7 @@ def main():
     plt.figure(figsize=(10, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", vmin=-1, vmax=1)
     plt.title('Correlation Matrix')
-    plt.savefig("../results/correlation_matrix.png")
+    #plt.savefig("../results/correlation_matrix.png")
     plt.show()
 
     # Add text length features
@@ -137,7 +138,7 @@ def main():
     plt.title('Distribution of Headline Lengths')
     plt.xlabel('Length of Headline')
     plt.ylabel('Frequency')
-    plt.savefig("../results/headline_length_distribution.png")
+    #plt.savefig("../results/headline_length_distribution.png")
     plt.show()
 
     # Visualize the distribution of short description lengths
@@ -146,11 +147,11 @@ def main():
     plt.title('Distribution of Short Description Lengths')
     plt.xlabel('Length of Short Description')
     plt.ylabel('Frequency')
-    plt.savefig("../results/short_description_lengths_distribution.png")
+    #plt.savefig("../results/short_description_lengths_distribution.png")
     plt.show()
     
-    df.to_csv("../results/preprocessed_data.csv", index=False)
-    print("Preprocessed data saved to preprocessed_data.csv")
+    #df.to_csv("../results/preprocessed_data.csv", index=False)
+    #print("Preprocessed data saved to preprocessed_data.csv")
     
 if __name__ == "__main__":
     main()
