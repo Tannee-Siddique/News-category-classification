@@ -78,7 +78,7 @@ python script/train.py
 
 6. Now you can run the pipeline [pipeline.ipynb](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/Notebooks/data_preprocessing/mongodb_pipeline.ipynb)
 
-7. Run to test some scripts using the file in [folder](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/script/test_preprocessing.py)
+7. Run to test some scripts using the file in [test_preprocessing.py](https://github.com/TRU-PBADS/adsc3910-project-group-1/tree/main/script/test_preprocessing.py)
 
 - `N_ESTIMATORS`: This parameter denotes the number of learning rate (2e-5) with the AdamW optimizer. The model was trained for 3 epochs. Batch size of 16 was used. Model uses a cross-entropy loss which technically is the default loss function for classification. A 5 fold cross-validation is used to access the model's performance across multiple data splits. Each part being used as a validation set once, while the other four parts were used for training.
 
