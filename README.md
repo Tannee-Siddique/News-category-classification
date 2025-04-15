@@ -1,37 +1,38 @@
-# adsc3910_project
+ADSC3910 Project
 
+Classification of News Category
 
-# Classification of News Category
-Welcome to our project, the Classification of News Category, This aims to explore and classify the type of new categories globally by leveraging the News Category Dataset. The primary objective is to automatically identify the classification of each article, focusing on key categories such as Politics, Sports, Health, Business and Entertainment. Analyzing these categories with models can accurately categorize news articles, enhancing information retrieval and user experience in news applications.
+Welcome to our project, Classification of News Category. This project aims to classify global news articles using the News Category Dataset. The primary objective is to automatically identify the category of each article, focusing on key areas such as Politics, Sports, Health, Business, and Entertainment. Accurate classification enhances information retrieval and improves user experience in news applications.
 
-Dive into the sections below to discover more about our project:
+🔍 Project Sections
 
 - [Team](#team)
 - [Project Overview](#project-overview)
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Team
+👥 Team
 
 Our team comprises of Post Baccalaureate Data Science students at the Thomposon River University in collaboration with [Quan Nguyen](https://github.com/quan3010)
 
-- [Khadiza Tannee](https://github.com/Tannee-Siddique)
+- [Khadiza Tannee](https://github.com/Tannee-Siddique)– Prepared and preprocessed the news data for model training and evaluation
 - [Viswateja Adothi](https://github.com/viswatejaadothi)
 - [Solomon Maccarthy](https://github.com/FiiMac)
 
-## Project Overview
+📚 Project Overview
 
 Classifying the various news categories is the goal of this study. We want to employ models to assist in  knowing the various news categories and enhances users experience on news platforms, improves content recommendations, and aids in content moderation
-## Installation
+
+⚙️ Installation
 
 Ensure you have the following tools installed
 - [VS Code](https://code.visualstudio.com/)
 
-## Platform
+💻 Platform
 - [Databricks](https://www.databricks.com/)
 - [Mongodb](https://account.mongodb.com/)
 
-## Credentials
+#### Guest Credentials
 
 - {
     "host": "clusterx.xxxxx.mongodb.net",
@@ -40,7 +41,7 @@ Ensure you have the following tools installed
     "password": "Group_1"
   }
 
-## Usage
+🚀 Usage
 
 - [README.md](https://github.com/TRU-PBADS/adsc3910-project-group-1/blob/main/README.md)
 
@@ -54,14 +55,14 @@ Follow the instructions below to run the prediction pipeline locally.
 git clone https://github.com/TRU-PBADS/adsc3910-project-group-1.git
 ```
 
-2.  and activate the required environment:
+2.  Activate the environment:
 
 ```bash
 conda env create --file adsc_3910_group_1_env.yaml
 conda activate adsc_3910_group_1
 ```
 
-3. As data is already prepocessed and guest credentials are provided run the python model using:
+3. Run the model: Since the data has already been preprocessed and credentials are provided, run:
 
 ```bash
 python script/cross_validate.py
@@ -84,6 +85,6 @@ python script/train.py
 
 
 
-### Dependencies
+📦 Dependencies
 
-For the Python dependencies and the conda environment creation file, please check [here](https://github.com/TRU-PBADS/adsc3910-project-group-1/adsc_3910_group_1_env.yaml)
+All required Python packages and environment setup are listed in the [adsc_3910_group_1_env.yaml](https://github.com/TRU-PBADS/adsc3910-project-group-1/adsc_3910_group_1_env.yaml) file.
