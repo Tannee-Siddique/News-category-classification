@@ -16,8 +16,8 @@ Welcome to our project, Classification of News Category. This project aims to cl
 Our team comprises of Post Baccalaureate Data Science students at the Thomposon River University in collaboration with [Quan Nguyen](https://github.com/quan3010)
 
 - [Khadiza Tannee](https://github.com/Tannee-Siddique)– Prepared and preprocessed the news data for model training and evaluation
-- [Viswateja Adothi](https://github.com/viswatejaadothi)
-- [Solomon Maccarthy](https://github.com/FiiMac)
+- [Viswateja Adothi](https://github.com/viswatejaadothi)- Developed and fine-tuned machine learning models for news classification.
+- [Solomon Maccarthy](https://github.com/FiiMac)- Handled training, performance evaluation, and model validation.
 
 📚 Project Overview
 
